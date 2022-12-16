@@ -1,0 +1,21 @@
+ <% if (username == null) { %>
+ <h2>손님</h2>
+ <% } else{ %>
+ <h2><%= username %></h2>
+ <%} %>
+ <h1>new Memo</h1>
+ <form action="/writeMemo" method="post" enctype="multipart/form-data">
+   <div>
+     <input type="text" name="name">
+   </div>
+   <div>
+     <input type="text" name="content">
+   </div>
+   <div>
+     <input type="date" name="time">
+   </div>
+   <div>
+     <input type="file" name="image">
+   </div>
+   <input type="submit" value="확인">
+ </form>

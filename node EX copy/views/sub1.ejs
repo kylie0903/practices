@@ -1,0 +1,16 @@
+<h1>sub1</h1>
+<table id="myTable">
+  <tr>
+    <th>번호</th>
+    <th>내용</th>
+    <th>작성자</th>
+    <th>이미지</th>
+  </tr>
+  <% rows.forEach((row)=>{ %>
+  <tr>
+    <td></td>
+    <td><%= row.content %></td>
+    <td><%= row.name %></td>
+    <td><img src='<%= row.img %>'></td>
+  </tr> <%  }); %>
+</table>

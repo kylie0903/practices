@@ -1,0 +1,7 @@
+var sql1 = 'SELECT *  FROM todo; '; 
+var sql2 = 'SELECT * FROM MBER; '; 
+
+dbconn.query(sql1 + sql2, function(err, rows, field){
+  var sql1_result = rows[0];	//sql1
+  var sql2_result = rows[1];	//sql2 
+});
